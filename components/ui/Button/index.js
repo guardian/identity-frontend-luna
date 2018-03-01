@@ -1,12 +1,13 @@
 import { Component } from 'preact';
-import style from './css';
+import css from './css';
 
 export default class Button extends Component {
 	render({
 		title = 'text',
+		style
 	}) {
 		return (
-			<button className={style.root}>
+			<button className={[css.root,style?css[style]:null].join(' ')}>
 				{title}
 			</button>
 		);

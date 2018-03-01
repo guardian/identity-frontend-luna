@@ -9,3 +9,8 @@
 	background: var(--color-cta);
 	font-size: 16px;
 }
+
+.root.secondary {
+	background: transparent;
+	border: 1px solid var(--color-border);
+}

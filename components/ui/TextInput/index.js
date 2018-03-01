@@ -7,7 +7,7 @@ export default class TextInput extends Component {
 		name
 	}) {
 		return (
-			<input className={style.root} type={type} />
+			<input className={style.root} type={type} name={name} />
 		);
 	}
 }
