@@ -1,0 +1,11 @@
+.root {
+	border-radius: 9999em;
+	height: var(--size-control);
+	appearance: none;
+	border: 0;
+	font-weight: 800;
+	width: 100%;
+	color: var(--color-brand);
+	background: var(--color-cta);
+	font-size: 16px;
+}

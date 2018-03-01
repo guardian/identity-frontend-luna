@@ -2,9 +2,10 @@ import './style';
 import { Component } from 'preact';
 
 import TextInput from './components/ui/TextInput';
-import InputWrapper from './components/ui/InputWrapper';
+import ControlWrapper from './components/ui/ControlWrapper';
 import Header from './components/shell/Header';
 import Wrapper from './components/shell/Wrapper';
+import Button from './components/ui/Button';
 
 
 export default class App extends Component {
@@ -13,12 +14,16 @@ export default class App extends Component {
 			<div>
 				<Header />
 				<Wrapper>
-					<InputWrapper title="Type in your email">
+					<h1>Sign in to The Guardian</h1>
+					<ControlWrapper title="Type in your email">
 						<TextInput/>
-					</InputWrapper>
-					<InputWrapper title="What is your password?">
+					</ControlWrapper>
+					<ControlWrapper title="What is your password?">
 						<TextInput type="password"/>
-					</InputWrapper>
+					</ControlWrapper>
+					<ControlWrapper>
+						<Button title="Continue" />
+					</ControlWrapper>
 				</Wrapper>
 			</div>
 		);

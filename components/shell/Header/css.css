@@ -2,10 +2,7 @@
 	max-width: 100%;
 	border-bottom: 1px solid var(--color-border);
 	height: 48px;
-}
-
-.wrapper {
-	composes: wrapper from '../../utils.css';
+	margin-bottom: var(--size-baseline);
 }
 
 .logo {
