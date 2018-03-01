@@ -6,11 +6,23 @@
 	font-weight: 800;
 	width: 100%;
 	color: var(--color-brand);
-	background: var(--color-cta);
 	font-size: 16px;
+	cursor: pointer;
 }
 
-.root.secondary {
+.root.STYLE_SECONDARY {
 	background: transparent;
 	border: 1px solid var(--color-border);
+}
+.root.STYLE_SECONDARY:hover {
+	border: 1px solid var(--color-border-hover);
+}
+
+.root.STYLE_PRIMARY {
+	background: var(--color-cta);
+	border: 0;
+}
+
+.root.STYLE_PRIMARY:hover {
+	filter: brightness(95%);
 }

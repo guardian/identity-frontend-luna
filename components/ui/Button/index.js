@@ -1,15 +1,20 @@
 import { Component } from 'preact';
 import css from './css';
 
-export default class Button extends Component {
+export const STYLE_PRIMARY = 'STYLE_PRIMARY';
+export const STYLE_SECONDARY = 'STYLE_SECONDARY';
+
+export const Button = class extends Component {
 	render({
 		title = 'text',
-		style
+		style = STYLE_PRIMARY
 	}) {
 		return (
-			<button className={[css.root,style?css[style]:null].join(' ')}>
+			<button className={[css.root,css[style]].join(' ')}>
 				{title}
 			</button>
 		);
 	}
 }
+
+export default Button

@@ -2,7 +2,7 @@ import { Component } from 'preact';
 
 import TextInput from '../ui/TextInput';
 import ControlWrapper from '../ui/ControlWrapper';
-import Button from '../ui/Button';
+import { Button, STYLE_SECONDARY as buttonSecondary} from '../ui/Button';
 import { route } from 'preact-router';
 
 
@@ -19,8 +19,8 @@ export default class App extends Component {
 			<form onSubmit={this.handleSubmit.bind(this)} >
 				<h1>Sign in to The Guardian</h1>
 				<ControlWrapper>
-					<Button title="Sign in with Facebook" href="#" style="secondary" />
-					<Button title="Sign in with Google" href="#" style="secondary" />
+					<Button title="Sign in with Facebook" href="#" style={buttonSecondary} />
+					<Button title="Sign in with Google" href="#" style={buttonSecondary} />
 				</ControlWrapper>
 				<ControlWrapper title="Type in your email">
 					<TextInput name="email"/>
